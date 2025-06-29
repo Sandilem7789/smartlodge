@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',  # Your core app for managing rooms
+    'rest_framework',  # Django REST Framework for API development
 ]
 
 MIDDLEWARE = [
