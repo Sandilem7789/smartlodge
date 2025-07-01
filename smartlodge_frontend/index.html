@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse Rooms | SmartLodge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Available Rooms</h1>
+  <div id="room-container" class="grid"></div>
+
+<!--
+    Booking Form Modal
+    This section contains the modal dialog for the booking form in the SmartLodge frontend application.
+    It is used to collect booking information from users.
+-->
+  <div id="booking-modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="modal-close" class="close">&times;</span>
+    <h2 id="modal-room-name">Booking Room</h2>
+    <form id="booking-form">
+      <label for="guestName">Your Name:</label>
+      <input type="text" id="guestName" required />
+
+      <label for="checkIn">Check-in:</label>
+      <input type="date" id="checkIn" required />
+
+      <label for="checkOut">Check-out:</label>
+      <input type="date" id="checkOut" required />
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+</div>
+
+
+  <script src="rooms.js"></script>
+</body>
+</html>

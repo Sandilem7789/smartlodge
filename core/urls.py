@@ -7,6 +7,8 @@ router.register(r'rooms', RoomViewSet)                                  # Regist
 router.register(r'bookings', BookingViewSet)                            # Register BookingViewSet with the router
 router.register(r'pms-integrations', PMSIntegrationViewSet)             # Register PMSIntegrationViewSet with the router
 
-urlpatterns = [                                                         # Define URL patterns
-    path('', include(router.urls)),                                     # Include the router's URLs
+urlpatterns = [                                                                             # Define URL patterns
+    path('', include(router.urls)),                                                         # Include the router's URLs
+    
 ]
+
